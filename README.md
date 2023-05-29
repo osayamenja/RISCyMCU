@@ -12,9 +12,7 @@ by M.M. Mano, C.R. Kime and Tom Martin.
 
 ![ISA_format](arch/ISA.png)
 
-![ISA](arch/ISA_detail.png)
-
-Instructions are 17 bits. All Opcodes are enumerated in `InstructionDecoder.v`.
+Instructions are 17 bits. All Opcodes are enumerated in `InstructionDecoder.v`. Skip to [here](#Instruction-Opcodes-and-Bit-Layouts) to see instruction opcodes and bit layouts.
 
 `DA` stands for Destination Register.
 `AA` & `BA` are input registers.
@@ -48,6 +46,9 @@ Supported instructions are:
 - Jump Register 
 - Branch if Nonzero  
 - Jump and Link
+
+### Instruction Opcodes and Bit Layouts
+![ISA](arch/ISA_detail.png)
 
 ## Architecture
 Again, the figure below is due to M.M. Mano, C.R. Kime and Tom Martin.
