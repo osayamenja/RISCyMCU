@@ -73,7 +73,15 @@ module CPU(
 			wire [1:0] BS_next;
 			reg [1:0] BS_in;
 			wire [1:0] BS_EX;
+			wire OR_DA;
+			wire Comp_AA;
+			wire Comp_BA;
+			wire HA;
+			wire HB;
 			wire MW;
+			wire PS_Z;
+			wire BS1_PS_Z;
+			wire new_BS0;
 			reg MW_in;
 			wire MW_next;
 			wire DHS;
