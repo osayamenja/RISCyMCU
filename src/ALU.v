@@ -71,7 +71,7 @@ module ALU(
 					4'b1110: F <= sum;
 					4'b1111: F <= A & B;
 					default: F <= 8'hzz;
-				endcase;
+				endcase
 				N <= F[MSB];
 				
 				D <= V ^ N;

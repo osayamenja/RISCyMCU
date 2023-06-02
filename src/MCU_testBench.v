@@ -9,26 +9,16 @@
 module MCU_testBench();
 							reg clk;
 							reg rst;
-							reg [7:0] in, KB;
-							wire [7:0] output_msb;
-							wire [7:0] output_lsb;
 							
 							MCU_Toplevel MCU(
 											.clk(clk),
-											.rst(rst),
-											.in(in),
-											.KB(KB),
-											.output_LSB(output_lsb),
-											.output_MSB(output_msb)
+											.rst(rst)
 							);
 							
 							always 
 								#5 clk <= ~clk;
 								
 							initial begin
-								$dumpfile("MCU_TopLevel.vcd");
-								$dumpvars(0, MCU_testBench);
-								
 								clk <= 1'b0;
 								rst <= 1'b1;
 								#10 rst <= 1'b0; 

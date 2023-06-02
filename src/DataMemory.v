@@ -26,7 +26,7 @@ module DataMemory (
 						integer i;
 						initial begin
 							for(i = 0; i < 256; i = i+1) begin
-								dMemory[i] <= 38'h00;
+								dMemory[i] <= 8'h00;
 							end
 						end
 						

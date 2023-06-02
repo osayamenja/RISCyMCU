@@ -24,8 +24,8 @@ module ProgramMemory #(parameter IN_BUS_WIDTH = 8, parameter OUT_BUS_WIDTH = 17)
 									pMemory[i] <= 17'b0000_0000_0000_00000;
 								end
 
-								//pMemory[0] <= 17'b10001_001_000_011110; // add $R2, $R0, 30
-                                				//pMemory[1] <= 17'b0000_0000_0000_00000; // exit
+								pMemory[0] <= 17'b10001_001_000_011110; // add $R1, $R0, 30
+                                pMemory[1] <= 17'b0000_0000_0000_00000; // exit
 							end
 							
 							always @(*) begin
